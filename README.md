@@ -56,29 +56,36 @@ Telegram Group             |  Telegram Group >400
 
 ## Usage
 
-- **Monitoring Real-Time Prices**:
+- **Running the Main Scraper and Monitor (main.py)**:
+
+    ```bash
+    python main.py
+    ```
+  
+- **Monitoring Real-Time Prices (Optional)**:
 
     ```bash
     python send_if_over_400.py
     ```
   
-- **Generating Max-Min Graphs**:
+- **Generating Max-Min Graphs (Optional)**:
 
     ```bash
     python Max_Min_graph.py
     ```
   
-- **Generating 24-Hour Difference Graphs**:
+- **Generating 24-Hour Difference Graphs (Optional)**:
 
     ```bash
     python diff_graph_past24.py
     ```
   
-- **Sending Graphs via Telegram**:
+- **Sending Graphs via Telegram (Optional)**:
 
     ```bash
     python send_graphs.py
     ```
+
   
 ## License
 
