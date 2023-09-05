@@ -1,6 +1,6 @@
 # Telegram Crypto Monitor
 
-A Python-based system for real-time cryptocurrency monitoring, analysis, and alerting via Telegram. Uses data from an SQLite database to keep track of maximum sell and minimum buy prices, offering interactive graphs and alerting capabilities.
+A Python-based system for real-time cryptocurrency monitoring, analysis, and alerting via Telegram. Utilizes webpage scraping to collect real-time data from cryptocurrency exchange platforms and uses an SQLite database to keep track of maximum sell and minimum buy prices. Offers interactive graphs and alerting capabilities.
 
 ![Mozilla Public License 2](https://img.shields.io/badge/license-MPL2-blue.svg)
 
@@ -11,6 +11,16 @@ A Python-based system for real-time cryptocurrency monitoring, analysis, and ale
 - Price Difference Alerts
 - Scheduled Reporting via Telegram
 - Easy-to-Follow Installation and Setup
+
+## Code Overview
+
+The `main.py` file includes code for scraping cryptocurrency data, storing it in an SQLite database, and sending alerts via Telegram. The code defines various functions:
+
+- `send_telegram_message()`: Sends messages via Telegram
+- `fetch_data()`: Scrapes data from a cryptocurrency exchange site
+- `store_data()`: Stores the scraped data in an SQLite database
+- `find_and_store_extreme_prices()`: Analyzes the data to find and store maximum sell and minimum buy prices
+- `query_latest_data()`: Queries the most recent data from the database
 
 ## Screenshots
 
@@ -77,4 +87,3 @@ This project is licensed under the Mozilla Public License 2.0 - see the [LICENSE
 ## Contact
 
 For any queries, discussions, or contributions, feel free to reach out to me on Telegram: [t.me/g3ntrix](https://t.me/g3ntrix).
-
